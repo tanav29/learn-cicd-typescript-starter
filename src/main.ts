@@ -31,6 +31,11 @@ app.use(
 
 app.use("/", express.static(path.join(__dirname, config.api.filepathRoot)));
 
+function unused() {
+  // this function does nothing
+  // and is called nowhere
+}
+
 const v1Router = express.Router();
 
 if (db) {
